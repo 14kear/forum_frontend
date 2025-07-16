@@ -1,0 +1,99 @@
+.chat-container {
+    max-width: 800px;
+    margin: 10px auto;
+    border: 1px solid #444;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* Темный фон */
+    color: #e0e0e0;
+}
+
+.chat-header {
+    padding: 16px;
+    background-color: #1a1a1a; /* Более темный заголовок */
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    background-color: #1e1e1e; /* Темный фон для сообщений */
+    border-bottom: 1px solid #444;
+}
+
+.chat-message {
+    margin-bottom: 12px;
+    padding: 12px;
+    background-color: #333; /* Тёмный фон сообщений */
+    border-radius: 8px; /* Закругленные углы */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Легкая тень для сообщений */
+}
+
+.message-email {
+    color: #8ab6d6; /* Мягкий синий цвет для email */
+    font-weight: bold;
+}
+
+.message-content {
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.chat-form {
+    display: flex;
+    border-top: 1px solid #444;
+    padding: 12px;
+    background-color: #1a1a1a; /* Темный фон ввода */
+}
+
+.chat-form input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #252525; /* Тёмный фон для поля ввода */
+    color: #fff;
+}
+
+.chat-form button {
+    padding: 12px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4a90e2; /* Насыщенный синий */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat-form button:hover {
+    background-color: #357ab7; /* Более темный синий на hover */
+}
+
+.chat-auth-warning {
+    padding: 16px;
+    text-align: center;
+    background-color: #1a1a1a; /* Темный фон предупреждения */
+    color: #ff6b6b; /* Красный цвет для предупреждения */
+}
+
+.chat-auth-warning a {
+    color: #8ab6d6; /* Ссылки в мягком синем */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.chat-auth-warning a:hover {
+    text-decoration: underline;
+}

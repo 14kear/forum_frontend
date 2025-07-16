@@ -1,0 +1,147 @@
+/* Основные стили контейнера */
+.topic-detail-container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 0;
+    color: #fff;
+}
+
+/* Обертка для кнпки и контента */
+.topic-content-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Стили кнопки возврата */
+.back-button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    flex-shrink: 0;
+    margin-top: 5px;
+    margin-left: -10px; /* Дополнительный сдвиг влево */
+}
+
+.back-button:hover {
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Основной контент темы */
+.topic-main-content {
+    flex-grow: 1;
+}
+
+.topic-main {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.topic-main h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.topic-main p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.topic-date {
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 10px;
+    display: block;
+    text-align: right;
+}
+
+.topic-author{
+    font-size: 16px;
+    color: #777;
+    text-align: right;
+
+}
+
+/* Стили для комментариев */
+.comments-section h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.comment-item {
+    background-color: #1a1a1a;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.comment-item p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.comment-date {
+    font-size: 12px;
+    color: #777;
+    text-align: right;
+}
+
+/* Форма комментария */
+.comment-form textarea {
+    width: 100%;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #444;
+    padding: 10px;
+    border-radius: 6px;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+.comment-form button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment-form button:hover {
+    background-color: #555;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.loading {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 50px;
+}
+.delete-button {
+    margin-top: 8px;
+    padding: 5px 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
+  
+  .delete-button:hover {
+    background-color: #c0392b;
+  }
