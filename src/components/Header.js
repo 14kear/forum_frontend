@@ -40,6 +40,7 @@ function Header() {
       <nav className="headForum">
         <div>
           <Link to="/">Главная</Link>
+          <Link to="/about">О сайте</Link>
           <Link to="/topics">Темы</Link>
         </div>
         <div className="exit">
